@@ -3,7 +3,7 @@
 This project contains two implementations for counting the maximum number of 'a', 'n', and 't' in a string, excluding consecutive 'ant' letters. Both a basic and an optimized implementation are provided.
 
 ## Video
-If the author of the code is Heydi García with ID 1107303 at INTEC, you can find an explanatory video at this link: [Tutorial - Benchmarking DeadAnts](https://www.youtube.com/watch?v=VIDEO_ID)
+If the author of the code is Heydi García with ID 1107303 at INTEC, you can find an explanatory video at this link: [Tutorial - Benchmarking DeadAnts](https://youtu.be/U95vhYP4Ut0)
 
 
 ## Implementation
