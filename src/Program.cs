@@ -1,11 +1,14 @@
 ﻿namespace src;
 using System;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
 
 class Program
 {   
         static void Main(string[] args)
         {
            Console.WriteLine(DeadAntsCounter.CountDeadAntsOpt("ant....ant..a..t..a..a..a"));
+           BenchmarkRunner.Run<DeadAntsBenchmark>();
         }
 
 }
@@ -42,3 +45,23 @@ public static class DeadAntsCounter
         }
 
     }
+
+[MemoryDiagnoser] //Habilitar diagnostico de memoria
+public class DeadAntsBenchmark 
+{
+    private string input = "...ant...ant..nat.ant.t..ant...ant..ant..ant.anant..t".Repeat(10000);
+
+    [Benchmark]
+    public void BenchmarkCountDeadAnts() => DeadAntsCounter.CountDeadAnts(input);
+
+     [Benchmark]
+    public void BenchmarkCountDeadAntsOpt() => DeadAntsCounter.CountDeadAntsOpt(input);
+}
+
+
+public static class Extensions{
+    public static string Repeat (this string s, int n)
+    {
+        return new System.Text.StringBuilder(s.Length * n).Insert(0,s,n).ToString();
+    }
+}
