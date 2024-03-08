@@ -92,3 +92,4 @@ C:\Users\coura\source\repos\BenchmarkDeadAntsxHeydi\src\obj\Release\net8.0\refin
 C:\Users\coura\source\repos\BenchmarkDeadAntsxHeydi\src\obj\Release\net8.0\src.pdb
 C:\Users\coura\source\repos\BenchmarkDeadAntsxHeydi\src\obj\Release\net8.0\src.genruntimeconfig.cache
 C:\Users\coura\source\repos\BenchmarkDeadAntsxHeydi\src\obj\Release\net8.0\ref\src.dll
+C:\Users\coura\source\repos\BenchmarkDeadAntsxHeydi\src\obj\Release\net8.0\src.sourcelink.json
